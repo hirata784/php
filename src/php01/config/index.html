@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form情報
+    名前：テキストボックス type=text name=name
+    商品：ラジオボックス type=radio  name=goods 
+    nameを全て同じにすれば一つだけ選択に
+    注文数：ナンバー type=number name=num
+    最大値maxと最小値minの設定するかも
+    送信ボタン：サブミット type=submit name=submit value=送信する -->
+    <form action="result.php" method="POST">
+        <label>お名前：<input type="text" name="name"></label><br>
+        <label>ご希望商品：
+            <label><input type="radio" name="goods" value="Aセット">Aセット</label>
+            <label><input type="radio" name="goods" value="Bセット">Bセット</label>
+            <label><input type="radio" name="goods" value="Cセット">Cセット</label>
+        </label><br>
+        <label>注文数：<input type="number" name="number"></label><br>
+        <input type="submit" name="submit" value="送信">
+
+    </form>
+
+
+</body>
+
+</html>
